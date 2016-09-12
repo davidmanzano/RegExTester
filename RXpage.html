@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="RXscript.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: azure">
+    <script type="text/javascript">
+        /*
+        alert("a + b = " + add(50, 100));
+        var today_date = new Date()
+        var myyear = today_date.getYear()
+        var mymonth = today_date.getMonth() + 1
+        var mytoday = today_date.getDate()
+        document.write(mymonth + "/" + mytoday)
+        */
+        //alert("a + b = " + add(100,150));
+    </script>
+    <div class="container">
+        <div id="wumbo" class="jumbotron" style="background-color: #40bf80; color: white; margin-top: 10px; font-family: 'Varela Round', sans-serif;" >
+            <h1>Regular Expression Tester</h1>
+            <p>
+                For all your irregular RegEx woes (╯°□°)╯︵ ┻━┻ 
+            </p>
+        </div>
+    </div>
+    <div class="form-group" style="margin-top: 30px; margin-left: 10px; margin-right: 10px; font-family: 'Varela Round', sans-serif;">
+        <label class="label label-info" for="regex" style="font-size: 13px">RegEx Pattern:</label>
+        <input type="text" class="form-control" id="regex" data-toggle="tooltip" data-placement="top" title="Enter a valid regular expression pattern" style="margin-top: 5px;" placeholder="ex. [abc]">
+    </div>
+    <div class="form-group" style="margin-left: 10px; margin-right: 10px; font-family: 'Varela Round', sans-serif;">
+        <label class="label label-info" for="mod" style="font-size: 13px">RegEx Modifier:</label>
+        <input font-style: italic type="text" class="form-control" id="mod" data-toggle="tooltip" data-placement="top" title="Enter a valid regular expression modifier" style="margin-top: 5px;" placeholder="ex. i">
+    </div>
+
+    <div id="stringContainer" style="margin-top: 35px; margin-bottom: 20px; margin-left: 10px; margin-right: 10px; font-family: 'Varela Round', sans-serif;">
+        <div id="block" class="form-group has-feedback">
+            <label class="label label-info" for="words" style="font-size: 13px">Strings to Check:</label>
+            <!--<button type="button" class="btn btn-primary btn-xs" onclick="addString()"><span class="glyphicon glyphicon-plus"></span></button>-->
+            <input type="text" class="form-control" rows="1" id="words" name="words[]" data-toggle="tooltip" data-placement="top" title="Enter a string to be checked against the RegEx" style="margin-top: 5px;" placeholder="ex. Manzano">
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary btn-block btn-lg" onclick="tester()" style="margin-bottom:20px; font-family: 'Varela Round', sans-serif;">Check RegEx</button>
+    <pre id="highlightedtext" style="color:black; background-color: white; height: 80px; font-family: 'Varela Round', sans-serif;"></pre>
+</body>
+</html>

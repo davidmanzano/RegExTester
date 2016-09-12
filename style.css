@@ -1,0 +1,17 @@
+﻿#wumbo h1 {
+    animation: fadein 1s;
+}
+
+#wumbo p {
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
